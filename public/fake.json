@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Chicken Fry",
+        "img": "https://images.unsplash.com/photo-1600555379765-f82335a7b1b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80.jpg",
+        "description": "Chatpata Chicken Fry | Simple and Tasty Chicken Fry"
+    },
+    {
+        "id": "2",
+        "name": "Sandwitch",
+        "img": "https://static5.depositphotos.com/1020804/534/i/950/depositphotos_5347946-stock-photo-sandwich-with-bacon.jpg",
+        "description": "A good sandwich comes down to the condiments,"
+    },
+    {
+        "id": "3",
+        "name": "Pizza",
+        "img": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80.jpg",
+        "description": "Maa Shaa Allah Everyone must taste their PIZZA!!"
+    },
+    {
+        "id": "4",
+        "name": "Burger",
+        "img": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80.jpg",
+        "description": "This isn't a burger; this is like a steak."
+    },
+    {
+        "id": "5",
+        "name": "Soup",
+        "img": "https://images.unsplash.com/photo-1611068120871-18adeb19dac3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80.jpg",
+        "description": "Awesome taste, quantity and quality of the food are praiseworthy."
+    },
+    {
+        "id": "6",
+        "name": "French Fries",
+        "img": "https://images.unsplash.com/photo-1607329773021-91a5dbd5986f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlbmNoJTIwZnJpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.jpg",
+        "description": "The French Fries was great in taste and fantastic in design"
+    },
+    {
+        "id": "7",
+        "name": "Fried Rice",
+        "img": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80.jpg",
+        "description": "Food taste is very good within the limited items."
+    },
+    {
+        "id": "8",
+        "name": "Nachos",
+        "img": "https://images.unsplash.com/photo-1622268854665-b82cb765518d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80.jpg",
+        "description": "Taste of the food is quite good tho."
+    },
+    {
+        "id": "9",
+        "name": "Kabab",
+        "img": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80.jpg",
+        "description": "... testy all eating manu sepecialy tea,nanruti,poreta,kabab...etc☕"
+    },
+    {
+        "id": "10",
+        "name": "Naan",
+        "img": "https://images.unsplash.com/photo-1611107415406-1c12f8cda424?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80.jpg",
+        "description": "... testy all eating manu sepecialy tea,nanruti,poreta,kabab...etc☕"
+    },
+    {
+        "id": "11",
+        "name": "Milkshake",
+        "img": "https://images.unsplash.com/photo-1568901839119-631418a3910d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=349&q=80.jpg",
+        "description": "tasted really good ice creams and milkshake here."
+    },
+    {
+        "id": "12",
+        "name": "Fruit Juice",
+        "img": "https://images.unsplash.com/photo-1497534446932-c925b458314e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=472&q=80.jpg",
+        "description": "Unfortunately you would find any diet cold drinks here."
+    }
+]
