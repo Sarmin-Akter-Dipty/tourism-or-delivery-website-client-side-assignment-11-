@@ -46,7 +46,7 @@ const OrderNow = () => {
 
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-7">
                     <h1 className="text-center"> Please register As a User</h1>
                     <div className="w-25 m-auto mt-5">
                         <div className="container border border d-flex justify-content-center align-items-center">
