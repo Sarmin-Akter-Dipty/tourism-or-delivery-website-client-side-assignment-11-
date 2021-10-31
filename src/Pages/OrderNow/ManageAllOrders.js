@@ -2,17 +2,24 @@ import React, { useEffect, useState } from 'react';
 
 
 const ManageAllOrders = () => {
+    const [orders, setOrders] = useState([]);
+    useEffect(() => {
+        fetch("https://possessed-moonlight-35549.herokuapp.com/allOrders")
+            .then((res) => res.json())
+            .then((data) => setOrders(data));
+    }, []);
 
     const [services, setServices] = useState([]);
     const [change, setChange] = useState(0)
 
     useEffect(() => {
+
         fetch('https://possessed-moonlight-35549.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [change]);
     const handleDelete = id => {
-        const url = `https://possessed-moonlight-35549.herokuapp.com/allorders/${id}`
+        const url = `https://possessed-moonlight-35549.herokuapp.com/items/allorders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
@@ -30,6 +37,9 @@ const ManageAllOrders = () => {
     }
     return (
         <div>
+            <h2>All Orders::::{orders.length}</h2>
+            {orders.map(order => <div key={order._id}>
+            </div>)}
 
             {
                 services?.map(service => <div key={service._id}>
