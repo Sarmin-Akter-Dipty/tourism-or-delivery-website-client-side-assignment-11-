@@ -1,5 +1,7 @@
-.img img{
+.image-size img{ 
     width: 250px;
     height: 200px;
     border-radius: 10px;
+
+    
 }

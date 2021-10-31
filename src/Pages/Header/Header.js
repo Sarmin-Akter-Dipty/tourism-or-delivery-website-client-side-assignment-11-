@@ -18,8 +18,9 @@ const Header = () => {
                 <Link to="/items" className="items">Items</Link>
                 <Link to="/pricing" className="items">Pricing</Link>
                 <Link to="/login" className="items">Log In</Link>
+                <Link to="/admin" className="items">Admin</Link>
                 <span className="text">{user?.displayName}</span>
-                {user?.email && <button onClick={logOut} className=" bg-success text-dark rounded-pill px-4 py-1 border-0 my-2">Log Out</button>}
+                {user?.email && <button onClick={logOut} className=" bg-warning text-dark rounded-pill px-4 py-1 border-0 my-2">Log Out</button>}
 
 
             </div>
