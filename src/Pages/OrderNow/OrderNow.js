@@ -14,7 +14,7 @@ const OrderNow = () => {
     console.log(item);
     useEffect(() => {
 
-        fetch(`https://possessed-moonlight-35549.herokuapp.com/items/${itemId}`)
+        fetch(`https://possessed-moonlight-35549.herokuapp.com/${itemId}`)
             .then(res => res.json())
             .then(data => setItem(data))
     }, [itemId])
@@ -22,8 +22,8 @@ const OrderNow = () => {
     const {
         register, handleSubmit, formState: { errors }, } = useForm();
     const onSubmit = (data) => {
-
-        fetch("https://possessed-moonlight-35549.herokuapp.com/ordernow", {
+        data.item = item
+        fetch("https://possessed-moonlight-35549.herokuapp.com/orders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -47,7 +47,7 @@ const OrderNow = () => {
                 </div>
 
                 <div className="col-md-7">
-                    <h1 className="text-center"> Please register As a User</h1>
+                    <h1 className="text-center"> Fill up your form</h1>
                     <div className="w-25 m-auto mt-5">
                         <div className="container border border d-flex justify-content-center align-items-center">
                             <div>
