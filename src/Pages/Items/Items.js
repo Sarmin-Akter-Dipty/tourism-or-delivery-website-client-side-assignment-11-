@@ -7,7 +7,7 @@ const Items = (props) => {
     //distructuring
     const { _id, img, name, description, price } = props.user
     return (
-        <div className="col-md-2">
+        <div className="col-md-3">
             <div className="cart">
                 <div className="img">
                     <img src={img} alt="" />

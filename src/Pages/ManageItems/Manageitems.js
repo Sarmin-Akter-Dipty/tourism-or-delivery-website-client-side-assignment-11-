@@ -11,7 +11,7 @@ const Manageitems = () => {
             .then(data => setServices(data))
     }, [change]);
     const handleDelete = id => {
-        const url = `https://possessed-moonlight-35549.herokuapp.com/${id}`
+        const url = `https://possessed-moonlight-35549.herokuapp.com/items/${id}`
         fetch(url, {
             method: 'DELETE'
         })
