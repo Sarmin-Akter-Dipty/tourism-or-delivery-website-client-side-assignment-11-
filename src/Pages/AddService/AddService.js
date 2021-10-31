@@ -6,7 +6,7 @@ import './AddService.css'
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/items', data)
+        axios.post('https://possessed-moonlight-35549.herokuapp.com/items', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully')

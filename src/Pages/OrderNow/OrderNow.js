@@ -78,6 +78,7 @@ const OrderNow = () => {
             <Link to="/myorders"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link>
             <Link to="/manageallorders"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Manage All Orders</button></Link>
             <Link to="/purchase"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Purchase</button></Link>
+            <Link to="/addservice"><button className="bg-warning rounded px-4 py-2 border-0 my-5 ">Add Item</button></Link>
             {user?.email && <button onClick={logOut} className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Log Out</button>}
 
         </div>
