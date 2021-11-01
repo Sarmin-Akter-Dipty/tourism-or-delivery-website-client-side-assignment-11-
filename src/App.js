@@ -59,13 +59,14 @@ function App() {
             <Route path="/admin">
               <Admin></Admin>
             </Route>
-            <Route path="/myorders">
+            <privateRoute path="/myorders">
               <MyOrder></MyOrder>
-            </Route>
+            </privateRoute>
 
-            <Route path="/manageallorders">
+            <PrivateRoute path="/manageallorders">
               <ManageAllOrders></ManageAllOrders>
-            </Route>
+            </PrivateRoute>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
