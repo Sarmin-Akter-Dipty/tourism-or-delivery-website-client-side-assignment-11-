@@ -15,9 +15,10 @@ const Items = (props) => {
                 <h3>{name}</h3>
                 <h5>{price}</h5>
                 <p>{description}</p>
-                <Link to={`/ordernow/${_id}`}>
+                <Link to={`/ordernow/${_id} `}>
                     <button className="btn btn-warning">Order Now {name.toLowerCase()}</button>
                 </Link>
+
             </div>
         </div >
     );

@@ -17,7 +17,7 @@ import OrderNow from './Pages/OrderNow/OrderNow';
 import Ourteam from './Pages/OurTeam/Ourteam';
 import Pricing from './Pages/Pricing/Pricing';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
-import Purchase from './Pages/Purchase/Purchase';
+
 
 function App() {
   return (
@@ -37,9 +37,6 @@ function App() {
               <MainItems></MainItems>
               <Pricing></Pricing>
               <Ourteam></Ourteam>
-            </Route>
-            <Route path="/pricing">
-              <Pricing></Pricing>
             </Route>
             <Route path="/items">
               <MainItems></MainItems>
@@ -65,9 +62,7 @@ function App() {
             <Route path="/myorders">
               <MyOrder></MyOrder>
             </Route>
-            <Route path="/purchase">
-              <Purchase></Purchase>
-            </Route>
+
             <Route path="/manageallorders">
               <ManageAllOrders></ManageAllOrders>
             </Route>

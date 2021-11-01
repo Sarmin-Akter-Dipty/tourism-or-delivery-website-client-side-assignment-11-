@@ -14,15 +14,18 @@ const OrderNow = () => {
     console.log(item);
     useEffect(() => {
 
-        fetch(`https://possessed-moonlight-35549.herokuapp.com/${itemId}`)
+        fetch(`https://possessed-moonlight-35549.herokuapp.com/items/${itemId}`)
             .then(res => res.json())
             .then(data => setItem(data))
     }, [itemId])
 
     const {
-        register, handleSubmit, formState: { errors }, } = useForm();
+        register, handleSubmit, formState: { errors }, reset } = useForm();
+
     const onSubmit = (data) => {
-        data.item = item
+
+        data.item = item;
+        data.status = 'Pending'
         fetch("https://possessed-moonlight-35549.herokuapp.com/orders", {
             method: "POST",
             headers: { "content-type": "application/json" },
@@ -31,11 +34,12 @@ const OrderNow = () => {
             .then((res) => res.json())
             .then((result) => console.log(result));
         console.log(data);
+        reset()
     };
     return (
         <div>
             <div className="row my-5 ">
-                <div className="col-md-5 my-5 ">
+                <div className="col-md-4 my-5 ">
                     <div className="image-size mt-5">
                         <img src={item?.img} alt="" />
                     </div>
@@ -46,14 +50,14 @@ const OrderNow = () => {
 
                 </div>
 
-                <div className="col-md-7">
+                <div className="col-md-8">
                     <h1 className="text-center"> Fill up your form</h1>
                     <div className="w-25 m-auto mt-5">
                         <div className="container border border d-flex justify-content-center align-items-center">
                             <div>
                                 <form onSubmit={handleSubmit(onSubmit)}>
-                                    <input {...register("name")} placeholder="Name" className="p-2 m-2" /> <br />
-                                    <input {...register("email", { required: true })} placeholder="Email" className="p-2 m-2" />  <br />
+                                    <input defaultValue={user.displayName} {...register("name")} placeholder="Name" className="p-2 m-2" /> <br />
+                                    <input defaultValue={user.email}  {...register("email", { required: true })} placeholder="Email" className="p-2 m-2" />  <br />
                                     <input {...register("date", { required: true })} placeholder="date" defaultValue={new Date()} className="p-2 m-2" />
                                     <br />
                                     <input {...register("address", { required: true })} placeholder="Address" className="p-2 m-2" />
@@ -73,11 +77,6 @@ const OrderNow = () => {
                     </div>
                 </div>
             </div>
-
-
-            <Link to="/myorders"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link>
-            <Link to="/manageallorders"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Manage All Orders</button></Link>
-            <Link to="/purchase"><button className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Purchase</button></Link>
             <Link to="/addservice"><button className="bg-warning rounded px-4 py-2 border-0 my-5 ">Add Item</button></Link>
             {user?.email && <button onClick={logOut} className="bg-warning rounded px-4 py-2 border-0 my-5 mx-2">Log Out</button>}
 
